@@ -1,8 +1,14 @@
 // import { Component } from 'react';
 
+import { IMonster } from '../../App';
+
 import './card.styles.css';
 
-const Card = ({monster}) => {
+interface ICardProps {
+    monster: IMonster;
+}
+
+const Card = ({monster}: ICardProps) => {
     const {name, email, id } = monster;
 
     return (
